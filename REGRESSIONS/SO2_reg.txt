@@ -1,0 +1,29 @@
+
+Call:
+lm(formula = as.formula(formula), data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-30.704  -5.629  -0.972   2.752 270.420 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          64.34145   29.56625   2.176 0.029554 *  
+SO2_trend             0.99829    0.04315  23.133  < 2e-16 ***
+SO2_daily             1.00112    0.02750  36.408  < 2e-16 ***
+SO2_weekly            0.99694    0.07711  12.929  < 2e-16 ***
+SO2_yearly            1.25017    0.08490  14.725  < 2e-16 ***
+cutFirst case         0.13403    1.00498   0.133 0.893904    
+cutEntry/Restaurants  0.12272    2.00886   0.061 0.951288    
+cutEmergency         -1.04000    1.99470  -0.521 0.602107    
+wind                 -0.12395    0.12462  -0.995 0.319919    
+precipitation        -0.16817    0.08660  -1.942 0.052155 .  
+temp                  0.10351    0.03032   3.414 0.000641 ***
+pressure             -0.71636    0.32328  -2.216 0.026711 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 20.91 on 19504 degrees of freedom
+Multiple R-squared:  0.1122,	Adjusted R-squared:  0.1117 
+F-statistic:   224 on 11 and 19504 DF,  p-value: < 2.2e-16
+

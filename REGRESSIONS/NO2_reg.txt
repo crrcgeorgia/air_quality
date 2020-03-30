@@ -1,0 +1,29 @@
+
+Call:
+lm(formula = as.formula(formula), data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-35.696  -6.914  -0.852   6.077  64.187 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          214.89558   15.01090  14.316  < 2e-16 ***
+NO2_trend              1.05802    0.01886  56.097  < 2e-16 ***
+NO2_daily              1.00014    0.01289  77.568  < 2e-16 ***
+NO2_weekly             0.90237    0.04829  18.685  < 2e-16 ***
+NO2_yearly             1.18062    0.02792  42.282  < 2e-16 ***
+cutFirst case          4.46094    0.48899   9.123  < 2e-16 ***
+cutEntry/Restaurants   2.19206    0.98824   2.218   0.0266 *  
+cutEmergency          -8.57660    0.97910  -8.760  < 2e-16 ***
+wind                  -2.49151    0.06081 -40.970  < 2e-16 ***
+precipitation         -0.58920    0.04211 -13.991  < 2e-16 ***
+temp                   0.10743    0.01432   7.502 6.57e-14 ***
+pressure              -2.32766    0.16427 -14.170  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 10.23 on 19504 degrees of freedom
+Multiple R-squared:  0.4399,	Adjusted R-squared:  0.4396 
+F-statistic:  1393 on 11 and 19504 DF,  p-value: < 2.2e-16
+

@@ -1,0 +1,29 @@
+
+Call:
+lm(formula = as.formula(formula), data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-38.305  -5.110  -0.543   4.061  81.282 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          287.28191   14.59421  19.685  < 2e-16 ***
+PM25_trend             1.40633    0.02379  59.125  < 2e-16 ***
+PM25_daily             1.00094    7.19592   0.139    0.889    
+PM25_weekly            0.82143    0.07452  11.023  < 2e-16 ***
+PM25_yearly            1.19933    0.01437  83.460  < 2e-16 ***
+cutFirst case          3.78230    0.47660   7.936 2.20e-15 ***
+cutEntry/Restaurants  -7.47984    0.94121  -7.947 2.01e-15 ***
+cutEmergency          -7.86028    0.93240  -8.430  < 2e-16 ***
+wind                  -2.01702    0.05811 -34.710  < 2e-16 ***
+precipitation         -0.40775    0.04085  -9.982  < 2e-16 ***
+temp                   0.24221    0.01307  18.536  < 2e-16 ***
+pressure              -3.22379    0.15821 -20.376  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 9.706 on 19504 degrees of freedom
+Multiple R-squared:  0.4317,	Adjusted R-squared:  0.4314 
+F-statistic:  1347 on 11 and 19504 DF,  p-value: < 2.2e-16
+
